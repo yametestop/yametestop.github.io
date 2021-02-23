@@ -425,7 +425,7 @@ a {
               padding: 15px 20px; } }
           .stream-container .post-list-container .post-item-wrapper .post-item .post-item-info-wrapper .post-item-title,
           .stream-container .post-list-container > * .post-item-wrapper .post-item .post-item-info-wrapper .post-item-title {
-            font-size: 30px;
+            font-size: 10px;
             font-weight: 600;
             font-style: normal;
             margin-bottom: 10px;
