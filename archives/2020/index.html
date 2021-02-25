@@ -35,20 +35,6 @@
 
   <!-- Baidu Push -->
   
-  <script>
-    (function() {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-  
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -187,7 +173,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Your Title</a>
+      <a class="navbar-brand" href="/">Flying In The Night Sky</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -295,10 +281,6 @@
     }
 
     
-      #signature {/*signature*/
-        background-image: url('/img/signature/vincent-white.png');
-      }
-    
   </style>
 
 
@@ -313,9 +295,9 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
           <div class="site-heading">
-            <h1>Your Title</h1>
+            <h1>Flying In The Night Sky</h1>
             <!--<hr class="small">-->
-            <span class="subheading">This is hexo theme</span>
+            <span class="subheading">凡是过往 皆为序章</span>
           </div>
           
         </div>
@@ -360,16 +342,9 @@
 <div class="container">
   <div class="row">
     
-
-    <!-- USE SIDEBAR -->
+    <!-- NO SIDEBAR -->
     <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
 
       
 <!-- Main Content -->
@@ -382,6 +357,30 @@
 
       <!-- 归档列表 -->
 
+      
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
+          <span class="tag-text">2021</span>
+        </span>
+        <ul>
+          
+          <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+          <li>
+            02-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2021/02/25/first/" style="color: #0085a1">
+              <span>
+                first
+              </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          
+        </ul>
+      </div>
       
       <div class="one-tag-list">
         <span class="fa fa-calendar-times-o listing-seperator" id="2020">
@@ -414,196 +413,46 @@
 </div>
 
 
-      <!-- 如果开启评论功能 -->
-      
     </div>
-
     <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!--   -->
-<h5><a href="/">VISITORS</a></h5>
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
 
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-<!--   -->
-
-        <hr>
-    
-        <!-- Featured Tags -->
-
-<section>
-  <!-- no hr -->
-  <h5><a href="/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
-    
-    
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/fatpeople.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Fat people have no future, either thin or die...</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
+      <!-- Featured Tags -->
+      
+      <section>
+        <!-- no hr -->
+        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+        <div class="tags">
+          
+          
+          <a href="/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
+          
+          
+          
+          <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
+          
+          
+        </div>
+      </section>
       
 
+      <!-- Friends Blog -->
       
-      <li>
-        <a target="_blank" href="https://github.com/V-Vincen">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://twitter.com/V_Vincen_">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.instagram.com/v_vincen_">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/WVincen">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
+      <hr>
+      <h5>FRIENDS</h5>
+      <ul class="list-inline">
         
-<!-- <h5>RECENT POSTS</h5> -->
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../2020/04/17/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<!-- <h5>FRIENDS</h5> -->
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://v-vincen.life/" target="_blank">V_Vincen</a></li>
-  
-  <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-  
-  <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
-</ul>
-
-
-        <hr>
-    
+        <li><a href="https://v-vincen.life/" target="_blank" rel="noopener">V_Vincen</a></li>
         
-    <!-- <h5>ARCHIVES</h5> -->
-    <h5><a href="/archives/">ARCHIVES</a></h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+        <li><a href="http://beantech.org" target="_blank" rel="noopener">Bean Tech</a></li>
+        
+        <li><a href="http://huangxuan.me" target="_blank" rel="noopener">Hux Blog</a></li>
+        
+        <li><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></li>
+        
+      </ul>
+      
     </div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<!-- <h5>categories</h5> -->
-<h5><a href="/categories/">CATEGORIES</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
     
   </div>
 </div>
@@ -619,25 +468,7 @@
           
 
           
-            <li>
-              <a target="_blank" href="https://github.com/V-Vincen">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
 
-          
-            <li>
-              <a target="_blank" href="https://twitter.com/V_Vincen_">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
           
 
           
@@ -671,7 +502,7 @@
         </ul>
         <p class="copyright text-muted">
           Copyright &copy;
-          Your Name
+          TheSe7en
           2021
           <br>
           Theme by
@@ -711,7 +542,7 @@
 <!-- Busuanzi JavaScript -->
 
   <!-- <script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script> -->
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
